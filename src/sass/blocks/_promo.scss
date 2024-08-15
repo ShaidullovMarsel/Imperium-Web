@@ -75,8 +75,10 @@
         text-align: left;
     }
     .sidepanel {
+        text-align: center;
         width: 72px;
         background: rgb(242, 246, 247);
+
         &__wrapper_logo {
             margin-top: 36px;
             @include circle ;
@@ -84,5 +86,42 @@
                 background: rgb(184, 76, 116);
             }
         }
+        &__wrapper_burger {
+            margin-top: 46px;
+        }
+        &__wrapper_blinds {
+            margin-top: 48px;
+        }
+        &__wrapper_rolls {
+            margin-top: 16px;
+        }
+        &__wrapper_mosquito {
+            margin-top: 16px;
+        }
+        &__wrapper_plisse {
+            margin-top: 16px;
+        }
+        &__wrapper_electrician {
+            margin-top: 16px;
+        }
+        &__wrapper_external {
+            margin-top: 16px;
+        }
+        &__wrapper_photoprinting {
+            margin-top: 16px;
+        }
+        &__wrapper_vector {
+            margin-top: 16px;
+        }
+        &__wrapper_stock {
+            margin-top: 16px;
+        }
+        &__wrapper_calculator {
+            margin-top: 16px;
+        }
+        &__wrapper_search {
+            margin-top: 199px;
+        }
+        
     }
 }
