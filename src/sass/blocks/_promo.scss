@@ -1,0 +1,88 @@
+.promo {
+    display: flex;
+    min-height: 100vh;
+    background: url('../../img/slider.png') no-repeat 50%/cover;
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 56px;
+        &-order {
+            margin-right: 17px;
+            .submit {
+                width: 149px;
+                height: 40px;
+                left: 1131px;
+                top: 56px;
+                background: rgb(184, 76, 116);
+                border-style: none;
+                color: rgb(255, 255, 255);
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 17px;
+                text-transform: uppercase;
+            }
+        }
+        &-shoppingcart {
+            @include circle
+        }
+    }
+    &__descr {
+        margin-top: 72px;
+        color: rgb(5, 46, 76);
+        font-size: 65px;
+        font-weight: 300;
+        line-height: 95px;
+        letter-spacing: 10%;
+        text-align: left;
+        text-transform: uppercase;
+        .bold{
+            font-weight: 300;
+        }
+    }
+    &__subdescr {
+        margin-top: 24px;
+        color: rgb(5, 46, 76);
+        font-family: PT Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+    }
+    &__calculator {
+        margin-top: 48px;
+        .calculator {
+            width: 132px;
+            height: 40px;
+            background: rgb(255, 255, 255);
+            border-style: none;
+            color: rgb(5, 46, 76);
+            font-family: PT Sans;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+        }
+    }
+    &__slide {
+        margin-top: 169px;
+        color: rgb(5, 46, 76);
+        font-family: PT Sans;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    .sidepanel {
+        width: 72px;
+        background: rgb(242, 246, 247);
+        &__wrapper_logo {
+            margin-top: 36px;
+            @include circle ;
+            .circle {
+                background: rgb(184, 76, 116);
+            }
+        }
+    }
+}
