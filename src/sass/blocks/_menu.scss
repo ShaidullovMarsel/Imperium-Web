@@ -1,14 +1,14 @@
 .menu {
-    background: white;
+    position: fixed;
+    height: 100vh;
     opacity: 0.9;
     width: 224px;
     top: 0;
     left: -100%;
-    width: 100%;
-    height: 100vh;
+
     z-index: 10;
-    visibility: visible;
-    opacity: 1;
+    visibility: hidden;
+    opacity: 0;
     transition: all 0.6s;
     &.active {
         left: 0;
@@ -63,10 +63,128 @@
     }
     &__rolls {
         display: flex;
-        margin-top: 24px;
+        margin-top: 16px;
         margin-left: 26px;
         &-text {
             @include menuitem
         }
     }
+    &__mosquito {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 26px;
+        &-text {
+            @include menuitem
+        }
+    }
+    &__plisse {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 26px;
+        &-text {
+            @include menuitem
+        }
+    }
+    &__electrician {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 26px;
+        &-text {
+            @include menuitem
+        }
+    }
+    &__external {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 26px;
+        &-text {
+            @include menuitem
+        }
+    }
+    &__photoprinting {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 26px;
+        &-text {
+            @include menuitem
+        }
+    }
+    &__vector {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 26px;
+        &-text {
+            @include menuitem
+        }
+    }
+    &__stock {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 26px;
+        &-text {
+            @include menuitem
+        }
+    }
+    &__calculator {
+        display: flex;
+        margin-top: 16px;
+        margin-left: 26px;
+        &-text {
+            margin-left: 16px;
+            color: rgb(184, 76, 116);
+            font-family: PT Sans;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            margin-top: 3px;
+        }
+    }
+    &__search {
+        display: flex;
+        margin-top: 64px;
+        margin-left: 26px;
+        &-input {
+            .input {
+                border-radius: 25px;
+                width: 176px;
+                height: 32px;
+                border: 1px solid rgb(65, 122, 130);
+                background: url("../../icons/search.svg") no-repeat 9px 7px;
+                
+            }
+            ::placeholder {
+                padding: 0 40px;
+                color: rgb(65, 122, 130);
+                font-family: PT Sans;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+              }
+        }
+        &-text {
+            @include menuitem
+        }
+    }
+    &__list {
+        margin-left: 26px;
+        margin-top: 32px;
+        text-align: left;
+        list-style-type: none;
+        .menu__link {
+            a {
+                text-decoration: none;
+                color: rgb(65, 122, 130);
+                font-family: PT Sans;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0%;
+                margin-bottom: 8px;
+            } 
+        }
+    }
+    
+    
 }
