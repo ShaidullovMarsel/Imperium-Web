@@ -22,3 +22,34 @@
     margin-top: 3px;
     
 }
+
+@mixin wrapper__item-text {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 40px;
+    color: rgb(5, 46, 76);
+    font-family: Cormorant Infant;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+@mixin slider {
+i {
+    border: solid black;
+    border-width: 0 1.5px 1.5px 0;
+    display: inline-block;
+    padding: 8px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+}

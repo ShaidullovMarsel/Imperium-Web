@@ -66,13 +66,19 @@
     }
     &__slide {
         margin-top: 169px;
-        color: rgb(5, 46, 76);
-        font-family: PT Sans;
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 17px;
-        letter-spacing: 0%;
-        text-align: left;
+        display: flex;
+        .promo__slide-text {
+            color: rgb(5, 46, 76);
+            font-family: PT Sans;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-right: 3px;
+            margin-left: 3px;
+        }
+        @include slider
     }
     .sidepanel {
         text-align: center;

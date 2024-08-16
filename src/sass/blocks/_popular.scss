@@ -1,0 +1,85 @@
+.popular {
+    min-height: 672px;
+    background: url('../../img/back.png') no-repeat 90%/cover;
+    .container__popular-text {
+        width: 1168px;
+        margin: 0 auto;
+    }
+    &__popular-text {
+        margin-left: 10px;
+        padding-top: 116px;
+        color: rgb(255, 255, 255);
+        font-family: Cormorant;
+        font-style: italic;
+        font-size: 250px;
+        font-weight: 400;
+        line-height: 56px;
+        text-align: left;
+        opacity: 0.05;
+    }
+    &__wrapper {
+        margin-top: 20px;
+        display: grid;
+        grid-template: repeat(2, 240px) / repeat(4, 308px);
+        position: absolute;
+        .horizontal-mosquitoes {
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+        }
+        .horizontal-curtains {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+        .horizontal-wallpaper {
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+        }
+        .wrapper__mosquitoes-text {
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 40px;
+            color: rgb(5, 46, 76);
+            font-family: Cormorant Infant;
+            font-size: 25px;
+            font-style: oblique;
+            font-weight: 400;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+            span {
+                font-weight: 700;
+            }
+        }
+        .wrapper__flower-text {
+            @include wrapper__item-text
+        }
+        .wrapper__curtains-text {
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 40px;
+            color: rgb(5, 46, 76);
+            font-family: Cormorant Infant;
+            font-size: 25px;
+            font-style: oblique;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        .wrapper__wallpaper-text {
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 40px;
+            color: rgb(255, 255, 255);
+            font-family: Cormorant Infant;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+    }
+}

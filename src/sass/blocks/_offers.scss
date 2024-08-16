@@ -1,0 +1,124 @@
+.offers {
+    &__descr {
+        padding-top: 136px;
+        display: flex;
+        width: 1120px;
+        justify-content: space-between;
+        &-text {
+            color: rgb(5, 46, 76);
+            font-family: PT Sans;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 26px;
+            letter-spacing: 0%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+        &-slide {
+            display: flex;
+            color: rgb(5, 46, 76);
+            font-family: PT Sans;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            margin-right: 3px;
+            margin-left: 3px;
+            @include slider
+        }
+    }
+    &__items {
+        margin-top: 22px;
+        //width: 1144px;
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 256px);
+            gap: 40px;
+            .offers__item {
+                padding: 16px 16px 40px 16px;
+                &-img {
+                    img {
+                        height: 278px;
+                        width: 224px;
+                    }
+                }
+                &-wrapper {
+                    width: 213px;
+                    .offers__item-descr {
+                        margin-top: 24px;
+                        color: rgb(5, 46, 76);
+                        font-family: PT Sans;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        letter-spacing: 0%;
+                        text-align: left;
+                    }
+                    .offers__item-price {
+                        margin-top: 47px;
+                        display: flex;
+                        align-items: center;
+                        .offers__item-from {
+                            color: rgb(5, 46, 76);
+                            font-family: Cormorant Infant;
+                            font-style: italic;
+                            font-size: 20px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: 0%;
+                            text-align: left;
+                        }
+                        .offers__item-newprice {
+                            margin-left: 12px;
+                            color: rgb(5, 46, 76);
+                            font-family: Cormorant;
+                            font-size: 22px;
+                            font-weight: 700;
+                            line-height: 39px;
+                            letter-spacing: 0%;
+                            text-align: left;
+                        }
+                        .offers__item-oldprice {
+                            margin-left: 16px;
+                            color: rgb(5, 46, 76);
+                            font-family: Cormorant;
+                            font-size: 22px;
+                            font-weight: 400;
+                            line-height: 39px;
+                            letter-spacing: 0%;
+                            text-align: left;
+                            opacity: 0.2;
+                        }
+                    }
+                    .offers__item-bid {
+                        margin-top: 16px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .offers__item-submit {
+                            .submit {
+                                width: 160px;
+                                height: 40px;
+                                background:white;
+                                color: rgb(5, 46, 76);
+                                font-family: PT Sans;
+                                font-size: 13px;
+                                font-weight: 400;
+                                line-height: 17px;
+                                letter-spacing: 0%;
+                                text-align: center;
+                                text-transform: uppercase;
+                                border: 1.5px solid #000;
+                            }
+                        }
+                        .offers__item-shoppingcart {
+                            width: 37px;
+                            height: 31px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
