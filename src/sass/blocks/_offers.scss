@@ -1,4 +1,5 @@
 .offers {
+    margin-bottom: 130px;
     &__descr {
         padding-top: 136px;
         display: flex;
@@ -30,17 +31,71 @@
     }
     &__items {
         margin-top: 22px;
-        //width: 1144px;
         &-wrapper {
             display: grid;
             grid-template-columns: repeat(4, 256px);
             gap: 40px;
+            :hover {
+                background-color: rgb(227, 246, 245);
+                cursor: pointer;
+                transition: all 0.6s;
+            }
             .offers__item {
                 padding: 16px 16px 40px 16px;
                 &-img {
-                    img {
+                    .main__image {
                         height: 278px;
-                        width: 224px;
+                        width: 224px;   
+                    }
+                    .offers__item-properties {
+                        display: flex;
+                        position: absolute;
+                        margin-top: 15px;
+                        .offers__properties-circle {
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                        .offers__properties-precent {
+                            img {
+                                width: 30px;
+                                height: 50px;
+                            }
+                        }
+                        .offers__properties-width {
+                            img {
+                                margin-left: 8px;
+                                width: 30px;
+                                height: 50px;
+                            }
+                        }
+                        .offers__properties-discount {
+                            margin-left: 40px;
+                            .discount {
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 25px;
+                                border-style: none;
+                            }
+                            .disc {
+                                color: rgb(184, 76, 116);
+                                font-family: Cormorant;
+                                font-size: 20px;
+                                font-weight: 700;
+                                line-height: 24px;
+                                letter-spacing: 0%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                    .offers__color {
+                        position: absolute;
+                        margin-top: 246px;  
+                        .offers__color-item {
+                            display: grid;
+                            grid-template-columns: repeat(7, 32px);
+                        }
                     }
                 }
                 &-wrapper {
@@ -80,6 +135,14 @@
                             text-align: left;
                         }
                         .offers__item-oldprice {
+                            .offers__oldprice-line {
+                                position: absolute;
+                                width: 60px;
+                                height: 0;
+                                margin-top: 20px;
+                                transform: rotate(-29.22deg);
+                                border: 1px solid rgb(184, 76, 116);
+                            }
                             margin-left: 16px;
                             color: rgb(5, 46, 76);
                             font-family: Cormorant;
