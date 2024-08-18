@@ -4,8 +4,8 @@
     &__wrapper {
         display: flex;
         padding-top: 48px;
-        justify-content: space-between;
         &-lorem {
+            margin-right: 157px;
             .footer__lorem {
                 list-style-type: none;
                 :hover {
@@ -28,6 +28,7 @@
             }
         }
         &-about {
+            margin-right: 121px;
             .footer__about {
                 list-style-type: none;
                 :hover {
@@ -54,6 +55,7 @@
             }
         }
         &-company {
+            margin-right: 168px;
             .footer__company-logo {
                 color: rgb(255, 255, 255);
                 font-family: PT Sans;
@@ -137,6 +139,11 @@
                     text-align: center;
                     text-transform: uppercase;
                     background-color: rgba(0, 0, 0, 0);
+                    cursor: pointer;
+                }
+                .footercalculator:hover {
+                    border: 1px solid rgb(65, 122, 130);
+                    color: rgb(65, 122, 130);
                 }
             }
             .footer__links-mail {
@@ -171,6 +178,60 @@
                 }
                 
             }
+        }
+    }
+    .footer__divider {
+        margin-top: 47px;
+        width: 100%;
+        border: 1px solid rgb(255, 255, 255);
+        opacity: 0.5;
+
+    }
+    .footer__bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        .footer__bottom-left {
+            color: rgb(255, 255, 255);
+            font-family: PT Sans;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            opacity: 0.5;
+        }
+        .footer__bottom-center {
+            display: flex;
+            list-style-type: none;
+            :hover {
+                color: rgb(65, 122, 130);
+            }
+            li {
+                line-height: 0;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-family: PT Sans;
+                font-size: 13px;
+                font-weight: 400;
+                line-height: 17px;
+                letter-spacing: 0%;
+                text-align: left;
+                opacity: 0.5;
+                margin-right: 16px;
+            }
+        }
+        .footer__bottom-right {
+            color: rgb(255, 255, 255);
+            font-family: PT Sans;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0%;
+            text-align: left;
+            opacity: 0.5;
         }
     }
 }
