@@ -31,15 +31,16 @@
     }
     &__items {
         margin-top: 22px;
+        
         &-wrapper {
-            display: grid;
-            grid-template-columns: repeat(4, 256px);
-            gap: 40px;
-            :hover {
+            .offers__items-wrapp:hover {
                 background-color: rgb(227, 246, 245);
                 cursor: pointer;
                 transition: all 0.6s;
             }
+            display: grid;
+            grid-template-columns: repeat(4, 256px);
+            gap: 40px;
             .offers__item {
                 padding: 16px 16px 40px 16px;
                 &-img {
@@ -52,18 +53,27 @@
                         position: absolute;
                         margin-top: 15px;
                         .offers__properties-circle {
+                            .visible {
+                                opacity: 0;
+                            }
                             img {
                                 width: 50px;
                                 height: 50px;
                             }
                         }
                         .offers__properties-precent {
+                            .visible {
+                                opacity: 0;
+                            }
                             img {
                                 width: 30px;
                                 height: 50px;
                             }
                         }
                         .offers__properties-width {
+                            .visible {
+                                opacity: 0;
+                            }
                             img {
                                 margin-left: 8px;
                                 width: 30px;
@@ -125,7 +135,7 @@
                             text-align: left;
                         }
                         .offers__item-newprice {
-                            margin-left: 12px;
+                            margin-left: 22px;
                             color: rgb(5, 46, 76);
                             font-family: Cormorant;
                             font-size: 22px;
@@ -143,9 +153,9 @@
                                 transform: rotate(-29.22deg);
                                 border: 1px solid rgb(184, 76, 116);
                             }
-                            margin-left: 16px;
+                            margin-left: 32px;
                             color: rgb(5, 46, 76);
-                            font-family: Cormorant;
+                            font-family: "Cormorant Infant", serif;
                             font-size: 22px;
                             font-weight: 400;
                             line-height: 39px;
@@ -163,7 +173,7 @@
                             .submit {
                                 width: 160px;
                                 height: 40px;
-                                background:white;
+                                background-color: rgba(0, 0, 0, 0);
                                 color: rgb(5, 46, 76);
                                 font-family: PT Sans;
                                 font-size: 13px;
@@ -173,6 +183,7 @@
                                 text-align: center;
                                 text-transform: uppercase;
                                 border: 1.5px solid #000;
+                                cursor: pointer;
                             }
                         }
                         .offers__item-shoppingcart {

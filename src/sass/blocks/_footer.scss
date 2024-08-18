@@ -94,7 +94,7 @@
                         color: rgb(65, 122, 130);
                     }
                     margin-right: 22px;
-                    font-family: Cormorant;
+                    font-family: "Cormorant Infant", serif;
                     font-size: 25px;
                     font-weight: 700;
                     line-height: 30px;
@@ -110,7 +110,7 @@
                         color: rgb(65, 122, 130);
                     }
                     color: rgb(255, 255, 255);
-                    font-family: Cormorant;
+                    font-family: "Cormorant Infant", serif;
                     font-size: 25px;
                     font-weight: 700;
                     line-height: 30px;
@@ -191,6 +191,7 @@
         display: flex;
         justify-content: space-between;
         margin-top: 16px;
+        padding-bottom: 24px;
         .footer__bottom-left {
             color: rgb(255, 255, 255);
             font-family: PT Sans;

@@ -9,6 +9,7 @@
         &-order {
             margin-right: 17px;
             .submit {
+                font-family: "PT Sans", sans-serif;
                 width: 149px;
                 height: 40px;
                 left: 1131px;
@@ -20,10 +21,20 @@
                 font-weight: 400;
                 line-height: 17px;
                 text-transform: uppercase;
+                cursor: pointer;
             }
         }
         &-shoppingcart {
-            @include circle
+            .circle {
+                cursor: pointer;
+                width: 40px;
+                height: 40px;
+                border-radius: 25px;
+                border-style: none;
+                &__img {
+                    vertical-align: middle;  
+                }
+            }
         }
     }
     &__descr {
@@ -35,15 +46,18 @@
         letter-spacing: 10%;
         text-align: left;
         text-transform: uppercase;
+        font-family: "Cormorant Infant", serif;
+        font-style: oblique;
         .bold{
             font-weight: 300;
+            font-style: normal;
         }
     }
     &__subdescr {
         margin-top: 24px;
         color: rgb(5, 46, 76);
         font-family: PT Sans;
-        font-size: 16px;
+        font-size: 21px;
         font-weight: 400;
         line-height: 30px;
         text-align: left;
@@ -56,20 +70,21 @@
             background: rgb(255, 255, 255);
             border-style: none;
             color: rgb(5, 46, 76);
-            font-family: PT Sans;
+            font-family: "PT Sans", sans-serif;
             font-size: 13px;
             font-weight: 400;
             line-height: 17px;
             letter-spacing: 0%;
             text-transform: uppercase;
+            cursor: pointer;
         }
     }
     &__slide {
-        margin-top: 169px;
+        margin-top: 129px;
         display: flex;
         .promo__slide-text {
             color: rgb(5, 46, 76);
-            font-family: PT Sans;
+            font-family: "PT Sans", sans-serif;
             font-size: 13px;
             font-weight: 400;
             line-height: 17px;
@@ -89,6 +104,7 @@
             margin-top: 36px;
             @include circle ;
             .circle {
+                
                 background: rgb(184, 76, 116);
             }
         }
@@ -97,37 +113,48 @@
             margin-top: 46px;
         }
         &__wrapper_blinds {
+            cursor: pointer;
             margin-top: 48px;
         }
         &__wrapper_rolls {
+            cursor: pointer;
             margin-top: 16px;
         }
         &__wrapper_mosquito {
+            cursor: pointer;
             margin-top: 16px;
         }
         &__wrapper_plisse {
+            cursor: pointer;
             margin-top: 16px;
         }
         &__wrapper_electrician {
+            cursor: pointer;
             margin-top: 16px;
         }
         &__wrapper_external {
+            cursor: pointer;
             margin-top: 16px;
         }
         &__wrapper_photoprinting {
+            cursor: pointer;
             margin-top: 16px;
         }
         &__wrapper_vector {
+            cursor: pointer;
             margin-top: 16px;
         }
         &__wrapper_stock {
+            cursor: pointer;
             margin-top: 16px;
         }
         &__wrapper_calculator {
+            cursor: pointer;
             margin-top: 16px;
         }
         &__wrapper_search {
-            margin-top: 159px;
+            cursor: pointer;
+            margin-top: 149px;
         }
         
     }
