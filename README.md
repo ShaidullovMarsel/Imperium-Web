@@ -1,4 +1,4 @@
-# Тестовое задание для компании Imperium Web
+# Тестовое задание для компании "Imperium Web"
 
 ## Технологии:
 ![HTML5](https://img.shields.io/badge/-HTML5-e34f26?logo=html5&logoColor=white)
